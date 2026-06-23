@@ -19,7 +19,7 @@
   .wrap { max-width:760px; width:100%; }
   h1 { font-size:28px; margin:0 0 8px; }
   .sub { color:var(--muted); font-size:16px; line-height:1.55; margin:0 0 36px; }
-  .cards { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
   a.card {
     display:block; text-decoration:none; color:inherit;
     border:1px solid var(--line); border-radius:14px; padding:24px;
@@ -47,6 +47,11 @@
       <span class="tag">Scroll-driven</span>
       <h2>Scroll walkthrough</h2>
       <p>Scroll-jacked walkthrough — each scroll advances one step of the flow, lighting up the matching boxes and arrows.</p>
+    </a>
+    <a class="card" href="static.html">
+      <span class="tag">Static</span>
+      <h2>Diagram only</h2>
+      <p>Plain architecture diagram with numbered arrows. No flow strip, no hover, pin, or scroll interactions.</p>
     </a>
   </div>
   <footer>A credential reference is a pointer, not a key. It works only for this user, on this machine, within its time window, and only through the Secure Access Proxy.</footer>
