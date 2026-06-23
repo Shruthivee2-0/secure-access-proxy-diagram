@@ -135,7 +135,10 @@
     background: var(--orange-soft);
     border-radius: 10px;
     padding: 18px 20px;
+    display: flex; flex-direction: column; justify-content: center;
   }
+  .proxy .label-lg { margin: 0; }
+  .data-right .tile { display: flex; flex-direction: column; justify-content: center; }
   .proxy .label-lg { color: var(--orange); display: flex; align-items: center; gap: 8px; }
   .phase {
     position: relative;
@@ -306,10 +309,6 @@
       <div class="data-inner">
         <div class="proxy unit" id="u-proxy">
           <p class="label-lg">🛡️ Secure Access Proxy</p>
-          <div class="phase">Authenticate client &amp; verify signed policy</div>
-          <div class="phase">Resolve reference (via Vault) &amp; inject real credential</div>
-          <div class="phase">Call destination API &amp; return response</div>
-          <div class="phase">Audit &amp; log</div>
         </div>
 
         <div class="data-right">
